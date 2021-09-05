@@ -5,14 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello CUHK</title>
+    <style>
+        table {
+            color:dodgerblue;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:30px;
+        }
+        ol {
+            color:khaki;
+            font-style: italic;
+        }
+        .Monday {
+            color:lightcoral;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: maroon;
+            width:50%;
+        }
+        .link {
+            color:olive;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: salmon;
+        }
+        h1 {color:yellowgreen;
+        }
+        #submit_button {
+            color:turquoise
+        }
+    </style>
 </head>
 <body >  
-    <h1>Hello Sunday!</h1>
+    <h1><i><u>Hello</u></i> Sunday!</h1>
+    <h1 class="Monday"><i><u>Hello</u></i> Monday!</h1>   
     <p style="background-color: #EBDEF0;">This is a paragraph. <br>
        We are going further.<br>
        Cool.<br>
     </p>
-    <img src="https://www.cuhk.edu.hk/chinese/images/cuhk_logo_2x.png?20150907">
+    <img src="https://www.cuhk.edu.hk/chinese/images/cuhk_logo_2x.png?20150907"><br>
     <a href="https://www.cuhk.edu.hk">Link to CUHK website.</a>
+    <ol>
+        <li class="Monday">Monday</li>
+        <li>Tuesday</li>
+        <li>Sunday</li>
+    </ol>
+
+    <table cellspacing="0" cellpadding="0" border="1">
+        <tr><th class="link">Student ID</th><th>First Name</th><th>Last Name</th></tr>
+        <tr> <td style="background-color:rgb(148, 86, 42);color:rgb(142, 231, 142)">1001</td><td>John</td><td>Chan</td></tr>
+        <tr> <td>1002</td><td>Jacob</td><td>Liu</td></tr>
+        <tr> <td>1003</td><td>Sara</td><td>Yoo</td></tr>
+        <tr> <td>1004</td><td>June</td><td>Cheng</td></tr>
+        <tr> <td>1005</td><td>Mary</td><td>Li</td></tr>
+    </table>
+
+    <form action="/nothing but nothing">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        <button id="submit_button">Submit</button>
+      </form> 
+
 </body>
 </html>
